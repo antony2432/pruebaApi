@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de consumo de API</title>
+</head>
+
+<body>
+    <div>
+        <form id="formulario">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese el Nombre" required>
+            </div>
+            <div>
+                <label for="description">descripción</label>
+                <input type="text" name="description" id="description" required>
+            </div>
+            <div>
+                <label for="quantity">Cantidad</label>
+                <input type="number" name="quantity" id="quantity">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="limpiar" type="button">Limpiar</button>
+
+        <div>
+            <h3>Buscar Producto</h3>
+            <input type="number" id="idbuscar" placeholder="Ingrese el id que desee buscar">
+            <button id="buscarId">Enviar</button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="data"></tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3>Eliminar Producto</h3>
+            <input type="number" id="idEliminar" placeholder="Ingrese el id que desee eliminar">
+            <button id="eliminarId">Enviar</button>
+            <p id="res"></p>
+        </div>
+
+        <div>
+            <h3>Numero de Total de Productos</h3>
+            <p id="total"></p>
+        </div>
+
+        <div>
+            <h2>Actualizar Dato</h2>
+            <form id="formularioUP">
+                <div>
+                    <label for="idUp">ID</label>
+                    <input type="number" name="idUp" id="idUp" required>
+                </div>
+                <div>
+                    <label for="nameUp">Nombre</label>
+                    <input type="text" name="nameUp" id="nameUp" placeholder="Ingrese el Nombre" required>
+                </div>
+                <div>
+                    <label for="descriptionUp">descripción</label>
+                    <input type="text" name="descriptionUp" id="descriptionUp" required>
+                </div>
+                <div>
+                    <label for="quantityUp">Cantidad</label>
+                    <input type="number" name="quantityUp" id="quantityUp">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <button id="limpiarUP" type="button">Limpiar</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
